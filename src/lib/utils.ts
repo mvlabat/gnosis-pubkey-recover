@@ -111,7 +111,6 @@ export const packTransaction = (decodedTxData: DecodedData, nonce: bigint): stri
 
 export const recoverAddresses = (dataHash: string, signatures: DecodedSignature[]): string[] => {
   return signatures.map(({ v, r, s }) => {
-    console.log(v, r, s);
     if (v === 0 || v === 1) {
       return '0x' + r.slice(26);
     }

@@ -9,7 +9,7 @@
 
   let providerIsInitialized = false;
   let provider: ethers.BrowserProvider | ethers.AbstractProvider | undefined;
-  let txHash: string = '0xfe854165add448b7ae31141c96b3bd431c2ccf999947cb2853fbf9b8cbad28d8';
+  let txHash: string = '';
   let addresses: { address: string; ensName: string | null }[] = [];
   let from = '';
 
